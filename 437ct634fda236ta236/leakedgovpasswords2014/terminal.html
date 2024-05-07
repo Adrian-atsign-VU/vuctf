@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="unixicon.png">
+<title>Gov Unix Terminal</title>
+<style>
+body,html{margin:0;padding:0;height:100%}body{font-family:'Courier New', Courier, monospace;background-color:#222;color:#fff;display:flex;align-items:center;justify-content:center}.terminal{background-color: #000;padding: 10px;width: 100%;height: 100%;overflow: auto;padding: 13px;padding-top: 63px;}.prompt{color:#0f0}.command{color:#fff}.output{color:#0f0}.error{color:#f00}input[type="text"]{background-color:transparent;border:none;outline:none;color:#0f0;font-family:'Courier New', Courier, monospace;width:calc(100% - 30px)}input[type="text"]:focus{outline:none}.cursor{animation:blink 1s infinite}@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#000}::-webkit-scrollbar-thumb{background:#555}::-webkit-scrollbar-thumb:hover{background:#888}
+</style>
+</head>
+<body>
+
+<div class="terminal" id="terminal">
+    <div class="output">ASIS Terminal Offline. Discover the password through alternative means or complete this riddle to obtain the code: 'Retrieve my dimensions and divide us by our count'</div>
+    <div class="prompt">nooniensingh@ASIS:~$ <span id="input-container"></span><span class="cursor">|</span></div>
+</div>
+
+<script>
+const terminal=document.getElementById("terminal"),inputContainer=document.getElementById("input-container"),cursor=document.querySelector(".cursor");function printOutput(t){const n=document.createElement("div");n.classList.add("output"),n.textContent=t,terminal.appendChild(n)}function printError(t){const n=document.createElement("div");n.classList.add("error"),n.textContent=t,terminal.appendChild(n)}function processCommand(t){"162392"===t.trim()?(printOutput("Access granted. Redirecting..."),setTimeout((function(){window.location.href="adrian-atsign-vu.github.io/437ct634fda236ta236/files.txt"}),2e3)):printError("Error: Command not found. Refresh the page to try again.")}document.addEventListener("keydown",(function(t){if("Enter"===t.key){const t=inputContainer.textContent.trim();printOutput("nooniensingh@ASIS:~$ "+t),processCommand(t),inputContainer.textContent="",cursor.classList.add("cursor")}else"Backspace"===t.key?inputContainer.textContent=inputContainer.textContent.slice(0,-1):inputContainer.textContent+=t.key})),inputContainer.addEventListener("input",(function(){cursor.classList.remove("cursor")}));
+</script>
+
+</body>
+</html>

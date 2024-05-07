@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VU CTF 2024</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        body {text-transform: uppercase; font-weight: bold;background-color: #f0f0f0;font-family: Arial, sans-serif;margin: 0;padding: 0;text-align: center;}h1 {color: #333;}p {color: #666;font-size: 16px;}.container {max-width: 900px;margin: 20px auto;padding: 20px;background-color: #f9f9f9;border-radius: 8px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}@keyframes pulse {0% {transform: scale(1);}50% {transform: scale(1.005);}100% {transform: scale(1);}}.animated {animation: pulse 2s infinite alternate;}img {max-width: 100%;height: auto;}@media (max-width: 600px) {.container {padding: 10px;}}h3{color: #202020;border-style: solid;padding: 5px;transition: color 0.3s ease;}h4{color: steelblue;}h2{color: slateblue;}h3:hover{color:#cacaca;background-color: #202020;}
+    </style>
+    <style>
+        #hint-paragraph {
+            display: none; 
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4b80b9; /* Blue color for button */
+            color: #fff; /* White text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #659edb; /* Darker blue color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="437ct634fda236ta236/main.png" alt="" style="max-width: 50%;">
+        <br>
+        <h1>Welcome to the VU CTF 2024!</h1>
+        <p style="color: #454545;">Got a clue below! Whoever grabs the flag first gets a cool wallpaper made by yours truly. Best of luck! This is going to be easy. Once you've nabbed the flag, @ me on Discord!</p>
+        <img src="437ct634fda236ta236/079823577097325071-34787.jpg" alt="image" class="animated">
+        <br>
+        <h2 style="font-size:18px;">After you've got the number and binary figured out, head over to: <h3 style="font-size:16px;">adrian-atsign-vu.github.io/437ct634fda236ta236/{number}.{01111010 01101001 01110000}</h3></h2>
+        <button id="hint-button">Click For Hint!</button>
+        <p id="hint-paragraph">Replace `{number}` with the answer and `{01111010 01101001 01110000}` with its binary in text equivalent. Then past the link and keep going!</p>    
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hintButton = document.getElementById("hint-button");
+            const hintParagraph = document.getElementById("hint-paragraph");
+
+            hintButton.addEventListener("click", function() {
+                hintParagraph.style.display = "block"; 
+            });
+        });
+    </script>
+</body>
+</html>
